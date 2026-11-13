@@ -26,6 +26,16 @@ a.link{display:flex;align-items:center;justify-content:center;gap:12px;text-deco
 padding:17px 18px;border:1px solid #d8b8a2;border-radius:999px;background:#fffaf5;color:var(--brown);
 font-size:17px;transition:transform .18s ease,background .18s ease;box-shadow:0 4px 12px #80583b0d}
 a.link:hover{transform:translateY(-2px);background:#f9e9e1}
+.menu-section{position:relative;z-index:1;margin-top:34px;padding-top:24px;border-top:1px solid #dfc5b1}
+.menu-title{font-size:25px;font-weight:normal;letter-spacing:1px;margin:0 0 7px}
+.menu-note{font-size:14px;color:var(--muted);font-style:italic;margin:0 0 18px}
+.menu-gallery{display:grid;gap:18px}
+.menu-item{margin:0}
+.menu-item a{display:block;border-radius:16px;overflow:hidden;border:1px solid #d8b8a2;box-shadow:0 7px 20px #80583b18;line-height:0}
+.menu-item img{display:block;width:100%;height:auto;transition:transform .25s ease}
+.menu-item a:hover img{transform:scale(1.015)}
+.menu-caption{font-size:13px;color:var(--muted);font-style:italic;margin:9px 0 0}
+@media(min-width:520px){.card{width:min(100%,500px)}}
 .icon{font-family:Arial,sans-serif;font-size:19px}
 .footer{margin-top:30px;color:#9a755d;font-size:13px;font-style:italic;letter-spacing:.4px}
 @media(prefers-reduced-motion:reduce){a.link{transition:none}}
@@ -46,6 +56,24 @@ a.link:hover{transform:translateY(-2px);background:#f9e9e1}
       <span class="icon">✉</span> Join Our WhatsApp Group
     </a>
   </nav>
+  <section class="menu-section" aria-label="SOFT menu">
+    <h2 class="menu-title">Our Menu</h2>
+    <p class="menu-note">A little sweetness for every mood ♡</p>
+    <div class="menu-gallery">
+      <figure class="menu-item">
+        <a href="soft-menu.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open SOFT dessert menu full size">
+          <img src="soft-menu.jpg" alt="SOFT dessert menu with Tiramisu, Oreo and Chocolate Crystals prices">
+        </a>
+        <figcaption class="menu-caption">Tap to view the menu in full size</figcaption>
+      </figure>
+      <figure class="menu-item">
+        <a href="healthy-menu-coming-soon.png" target="_blank" rel="noopener noreferrer" aria-label="Open Healthy Menu coming soon full size">
+          <img src="healthy-menu-coming-soon.png" alt="SOFT Healthy Menu — Coming Soon">
+        </a>
+        <figcaption class="menu-caption">Something lovely is coming soon ♡</figcaption>
+      </figure>
+    </div>
+  </section>
   <div class="footer">Made with love, just for you ♡</div>
 </main>
 </body>
