@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f7e9dc">
+<title>SOFT. | Little sweetness, a lot of love.</title>
+<style>
+:root{--cream:#f7e9dc;--paper:#fff8f0;--brown:#5b321f;--muted:#916c55;--pink:#edc4bc;--line:#d7b59d}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:grid;place-items:center;padding:28px 16px;
+background:radial-gradient(ellipse at 12% 12%,#f1d8c8 0,transparent 32%),
+radial-gradient(ellipse at 88% 85%,#e9c8b7 0,transparent 34%),var(--cream);
+color:var(--brown);font-family:Georgia,'Times New Roman',serif}
+.card{width:min(100%,440px);padding:42px 26px 30px;background:rgba(255,248,240,.88);
+border:1px solid var(--line);border-radius:28px;box-shadow:0 18px 50px #80583b20;position:relative;overflow:hidden;text-align:center}
+.card:before{content:"";position:absolute;inset:10px;border:1px solid #d9bca7;border-radius:21px;pointer-events:none}
+.flower{position:absolute;font-size:46px;opacity:.5;line-height:1}
+.f1{top:12px;right:18px;transform:rotate(18deg)}.f2{bottom:10px;left:18px;transform:rotate(-20deg)}
+.brand{font-size:clamp(54px,14vw,72px);letter-spacing:3px;margin:6px 0 2px;font-weight:normal}
+.heart{font-size:22px;margin:2px auto 9px}
+.tagline{font-style:italic;font-size:18px;color:var(--muted);margin:0 0 30px}
+.intro{font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#a17b63;margin-bottom:14px}
+.links{display:grid;gap:14px;position:relative;z-index:1}
+a.link{display:flex;align-items:center;justify-content:center;gap:12px;text-decoration:none;
+padding:17px 18px;border:1px solid #d8b8a2;border-radius:999px;background:#fffaf5;color:var(--brown);
+font-size:17px;transition:transform .18s ease,background .18s ease;box-shadow:0 4px 12px #80583b0d}
+a.link:hover{transform:translateY(-2px);background:#f9e9e1}
+.icon{font-family:Arial,sans-serif;font-size:19px}
+.footer{margin-top:30px;color:#9a755d;font-size:13px;font-style:italic;letter-spacing:.4px}
+@media(prefers-reduced-motion:reduce){a.link{transition:none}}
+</style>
+</head>
+<body>
+<main class="card">
+  <span class="flower f1">✿</span><span class="flower f2">❀</span>
+  <h1 class="brand">SOFT.</h1>
+  <div class="heart">──── ♡ ────</div>
+  <p class="tagline">Little sweetness, a lot of love.</p>
+  <div class="intro">Find us here</div>
+  <nav class="links" aria-label="SOFT links">
+    <a class="link" href="https://www.instagram.com/soft.sweetness5?exln=ZHNrc2o1OThub3F1" target="_blank" rel="noopener noreferrer">
+      <span class="icon">♡</span> Instagram Page
+    </a>
+    <a class="link" href="https://chat.whatsapp.com/HenXpgCfUmE0l8D4NLnzdb?s=cl&amp;p=i&amp;mlu=4&amp;ilr=4&amp;iam=2" target="_blank" rel="noopener noreferrer">
+      <span class="icon">✉</span> Join Our WhatsApp Group
+    </a>
+  </nav>
+  <div class="footer">Made with love, just for you ♡</div>
+</main>
+</body>
+</html>
